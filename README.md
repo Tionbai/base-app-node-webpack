@@ -1,6 +1,6 @@
 # base-app-node-webpack
 
-A base app in _Node.js_ with _Webpack 4_ and _Babel_ set up.
+A base app in Node.js with Webpack 4 and Babel set up.
 
 ## Installation
 
@@ -69,9 +69,9 @@ or if you are using `VSCode`, open with [VSCode Live Server](https://marketplace
 
 ## Usage
 
-This app uses _Webpack 4_.
+This app uses Webpack 4.
 
-_Webpack_ and _Babel_ is set up. Change configs as you wish.
+Webpack and Babel is set up. Change configs as you wish.
 
 Develop your app and deploy for production.
 
@@ -79,7 +79,7 @@ Develop your app and deploy for production.
 
 ### Note If you update to _Webpack 5_:
 
-_Webpack 5_ stops automatically polyfilling _Node.js core modules_. If you are using core modules in this app and update to _Webpack 5_ without polyfills, the app will break. It is possible to manually add polyfills.
+Webpack 5 stops automatically polyfilling Node.js core modules. If you are using core modules in this app and update to Webpack 5 without polyfills, the app will break. It is possible to manually add polyfills.
 
 Read more about updates in Webpack 5 release in the documentation: [Webpack 5 release](https://webpack.js.org/blog/2020-10-10-webpack-5-release/).
 
@@ -91,7 +91,7 @@ Errors in the terminal will give hints on how to add the required polyfill.
 
 **Example for path module:**
 
-In your _Webpack config_:
+In your Webpack config:
 
 ```javascript
 module.exports = {
@@ -117,8 +117,11 @@ Restart the Dev Server and the error will be gone.
 ---
 
 Read more:
+
 [Node.js](https://nodejs.org/en/)
+
 [Webpack](https://webpack.js.org/)
+
 [Babel](https://babeljs.io/)
 
 ## Contributing
