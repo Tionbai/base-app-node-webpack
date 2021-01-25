@@ -1,6 +1,8 @@
 # base-app-node-webpack
 
-A base app in Node.js with Webpack 4 and Babel set up.
+A base app in Node.js with Webpack 4.
+
+Babel, Eslint, Prettier, Sass, fonts and images assets are set up.
 
 ## Installation
 
@@ -71,7 +73,7 @@ or if you are using `VSCode`, open with [VSCode Live Server](https://marketplace
 
 This app uses Webpack 4.
 
-Webpack and Babel is set up. Change configs as you wish.
+Webpack, Babel, Eslint, Prettier, Sass, fonts and images assets are set up. Change configs as you wish.
 
 Develop your app and deploy for production.
 
