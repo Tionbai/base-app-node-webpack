@@ -58,3 +58,13 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
 }
+
+.coffee-image {
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  .coffee-image {
+    width: 550px;
+  }
+}
