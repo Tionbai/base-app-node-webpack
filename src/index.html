@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-  <h1><%= htmlWebpackPlugin.options.title %></h1>
-  <main class="app">
-
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" src="./index.css" type="text/css" />
+  </head>
+  <body>
+    <h1><%= htmlWebpackPlugin.options.title %></h1>
+    <main class="app">
+      <p class="nunito-regular">Hello, this is Nunito regular.</p>
+      <p class="nunito-regular--italic">Hello, this is Nunito regular italic.</p>
+      <p class="nunito-light">Hello, this is Nunito light.</p>
+      <p class="nunito-bold">Hello, this is Nunito bold.</p>
+    </main>
+  </body>
 </html>

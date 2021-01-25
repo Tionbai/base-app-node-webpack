@@ -1,6 +1,7 @@
-const { merge } = require("webpack-merge");
+// const { merge } = import('webpack-merge');
+const { merge } = require('webpack-merge');
 
-const commonConfig = require("./webpack.common.js");
+const commonConfig = require('./webpack.common.js');
 
 // Run optional addons in webpack config
 const getAddons = (addonsArgs) => {
@@ -8,14 +9,18 @@ const getAddons = (addonsArgs) => {
   const addons = Array.isArray(addonsArgs) ? addonsArgs : [addonsArgs];
 
   // Return addons if true, else return false.
-  return addons
-    .filter(Boolean)
-    .map((name) => require(`./addons/webpack.${name}.js`));
+  return (
+    addons
+      .filter(Boolean)
+      /* eslint-disable-next-line */
+      .map((name) => require(`./addons/webpack.${name}.js`))
+  );
 };
 
+// Merge common config, environment config, and addons.
 module.exports = ({ env, addon }) => {
+  /* eslint-disable-next-line */
   const envConfig = require(`./webpack.${env}.js`);
 
-  // Merge common config, environment config, and addons.
   return merge(commonConfig, envConfig, ...getAddons(addon));
 };

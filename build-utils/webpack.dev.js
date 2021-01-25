@@ -1,12 +1,12 @@
-const path = require("path");
-const Dotenv = require("dotenv-webpack");
+const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   plugins: [
     new Dotenv({
       path: path.join(__dirname, '../.env.development'),
     }),
   ],
-  devtool: "eval-source-map",
+  devtool: 'eval-source-map',
 };

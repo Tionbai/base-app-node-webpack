@@ -77,7 +77,7 @@ Develop your app and deploy for production.
 
 ---
 
-### Note If you update to Webpack 5:
+### Note if you update to Webpack 5:
 
 Webpack 5 stops automatically polyfilling Node.js core modules. If you are using core modules in this app and update to Webpack 5 without polyfills, the app will break. It is possible to manually add polyfills.
 
