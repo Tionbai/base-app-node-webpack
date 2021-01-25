@@ -30,13 +30,17 @@
     url('assets/fonts/Nunito-700.woff') format('woff');
 }
 
+$colors: grey, blue, red, green;
+
+@for $i from 1 through length($colors) {
+  p:nth-child(#{length($colors)}n + #{$i}) {
+    color: nth($colors, $i);
+  }
+}
+
 html,
 body {
   font-family: 'Nunito', sans-serif;
-}
-
-h2 {
-  color: blue;
 }
 
 .nunito-regular {

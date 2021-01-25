@@ -10,7 +10,7 @@
     "build:analyze": "npm run build -- --env addon=bundleanalyze",
     "build:http-server": "npx http-server dist",
     "lint": "eslint --fix **/*.js",
-    "format": "prettier --write \"{,!(node_modules)/**/}*.js\""
+    "format": "prettier --write \"{,!(node_modules)/**/}*.{js,scss,html}\""
   },
   "author": "Tina Bisgaard",
   "license": "MIT",

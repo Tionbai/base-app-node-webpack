@@ -1,5 +1,5 @@
 import app from './app';
-import './index.css';
+import './index.scss';
 
 console.log('Webpack bundled successfully.');
 
