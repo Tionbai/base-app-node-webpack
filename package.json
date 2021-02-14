@@ -1,7 +1,7 @@
 {
-  "name": "base-app-node-webpack",
+  "name": "base-setup-webpack",
   "version": "1.0.0",
-  "description": "A base application in Node.js with Webpack and Babel set up",
+  "description": "A base setup with Node.js and Webpack 4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

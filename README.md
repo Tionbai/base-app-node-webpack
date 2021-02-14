@@ -1,14 +1,14 @@
-# base-app-node-webpack
+# base-setup-webpack
 
-A base app in Node.js with Webpack 4.
+A base setup with Node.js and Webpack 4.
 
-Babel, Eslint, Prettier, Sass, fonts and images assets are set up.
+Babel, Eslint, Prettier, Sass, fonts and images assets are also set up.
 
 ## Installation
 
 Clone this repository. You will need node and npm installed globally on your machine.
 
-### Installation:
+CD into root directory.
 
 ```bash
 
@@ -20,7 +20,7 @@ npm install
 
 ```
 
-### To run Webpack Dev Server:
+### To run Webpack Dev Server
 
 ```bash
 
@@ -32,7 +32,7 @@ npm run start
 
 ```
 
-### To visit app in development:
+### To visit app in development
 
 ```bash
 
@@ -44,7 +44,7 @@ localhost:8080
 
 ```
 
-### To run Webpack Production Build:
+### To run Webpack Production Build
 
 ```bash
 
@@ -56,7 +56,7 @@ npm run build
 
 ```
 
-### To visit app in production:
+### To visit app in production
 
 ```bash
 
@@ -79,7 +79,7 @@ Develop your app and deploy for production.
 
 ---
 
-### Note if you update to Webpack 5:
+### Note if you update to Webpack 5
 
 Webpack 5 stops automatically polyfilling Node.js core modules. If you are using core modules in this app and update to Webpack 5 without polyfills, the app will break. It is possible to manually add polyfills.
 
@@ -87,7 +87,7 @@ Read more about updates in Webpack 5 release in the documentation: [Webpack 5 re
 
 ---
 
-### How to add polyfills in Webpack 5:
+### How to add polyfills in Webpack 5
 
 Errors in the terminal will give hints on how to add the required polyfill.
 
@@ -97,14 +97,14 @@ In your Webpack config:
 
 ```javascript
 module.exports = {
-	...
-	resolve: {
-	...
-		fallback: {
-			"path":  require.resolve("path-browserify"),
-		},
-	},
-	...
+  ...
+  resolve: {
+  ...
+    fallback: {
+      "path":  require.resolve("path-browserify"),
+    },
+  },
+  ...
 };
 ```
 
